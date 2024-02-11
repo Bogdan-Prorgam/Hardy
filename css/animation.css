@@ -1,0 +1,415 @@
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); } 
+  }
+  
+  @keyframes fruitAni {
+    0% { transform: translate(1px, 1px); }
+    40% { transform: translate(4px, 4px); }
+    50% { transform: translate(5px, 5px); }
+    60% { transform: translate(6px, 6px); }
+    90% { transform: translate(3px, 3px); }
+    100% { transform: translate(2px, 2px); }
+  }
+  
+  @keyframes floating-2 {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 10px); }
+    100%   { transform: translate(0, -0px); } 
+  }
+  
+  @keyframes fruitAni-2 {
+    0% { transform: translate(4px, 5px); }
+    33% { transform: translate(12px, 11px); }
+    66% { transform: translate(8px, 8px); }
+    100% { transform: translate(4px, 5px); }
+  }
+  
+  @keyframes floating-3 {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 20px); }
+    100%   { transform: translate(0, -0px); } 
+  }
+  
+  @keyframes fruitAni-3 {
+    0% { transform: translate(5px, 10px); }
+    33% { transform: translate(3px, 15px); }
+    66% { transform: translate(6px, 8px); }
+    100% { transform: translate(5px, 10px); }
+  }
+  @keyframes float {
+      0% {
+          transform: translatey(0px);
+      }
+      50% {
+          transform: translatey(-20px);
+      }
+      100% {
+          transform: translatey(0px);
+      }
+  }
+  
+  @keyframes float-2 {
+      0% {
+          transform: translatey(0px)rotate(-96deg);
+      }
+      50% {
+          transform: translateX(10px) translateY(-10px) rotate(-100deg);
+      }
+      100% {
+          transform: translatey(0px)rotate(-96deg);
+      }
+  }
+  
+  @keyframes float-3 {
+      0% {
+          transform: translatey(0px);
+      }
+      50% {
+          transform: translateX(10px) translateY(10px);
+      }
+      100% {
+          transform: translatey(0px);
+      }
+  }
+    
+  @keyframes mainImageAnimation {
+    from {
+      transform: translate(10%, -10%) rotate(0deg);
+   }
+    to {
+      transform: translate(30%, -30%) rotate(40deg);
+   }
+  }
+  @keyframes mainImageAnimation2 {
+    from {
+      transform: translate(-20%, 20%) rotate(0deg);
+   }
+    to {
+      transform: translate(-40%, 40%) rotate(80deg);
+   }
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg) translate(-20%, 20%);
+   }
+    to {
+      transform: rotate(180deg) translate(10%, -10%);
+   }
+  }
+  @keyframes gradient-fade {
+    from {
+      transform: translate(10%, -10%) rotate(0deg);
+   }
+    to {
+      transform: translate(50%, -50%) rotate(360deg);
+   }
+  }
+  
+  @keyframes bounce-1 {
+    0% {
+      transform: translateY(0);
+   }
+    50% {
+      transform: translateY(50px);
+   }
+    100% {
+      transform: translateY(0);
+   }
+  }
+  @keyframes bounce-2 {
+    0% {
+      transform: translateY(0);
+   }
+    50% {
+      transform: translateY(-30px);
+   }
+    100% {
+      transform: translateY(0);
+   }
+  }
+  @keyframes bounce-3 {
+    0% {
+      transform: translateX(0) translateY(0);
+   }
+    50% {
+      transform: translateX(30px) translateY(-30px);
+   }
+    100% {
+      transform: translateX(0) translateY(0);
+   }
+  }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+   }
+    to {
+      transform: rotate(360deg);
+   }
+  }
+
+
+  /*
+  .slide1-el1 {
+    animation-name: float;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+  }
+  
+  .slide1-el2 {
+    animation-name: float-2;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+  }
+  
+  .slide1-el3 {
+    animation-name: floating;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+  }
+  */
+  
+  .lem3, .lemon_ns, .lemon_ns2 {
+      animation-name: floating;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+  }
+  
+  .lem2, .lemonpiece_ns2 {
+      animation-name: float-2;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+  }
+  .lem1, .lemonpiece_ns {
+      animation-name: float;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+  }
+  
+  
+  
+  .topAnimation {
+    animation: rhombus_small 1s linear forwards;
+  }
+  @keyframes rhombus_small {
+    0%{
+        transform: scale3d(1,1,1);
+        opacity: 1;
+    }
+    89%{
+      transform: scale3d(1.15,1.15,1.15);
+      opacity: 1;
+  }
+    99%{
+        transform: scale3d(2.15,2.15,2.15);
+        opacity: 1;
+    }
+    100%{
+        transform: scale3d(3.15,3.15,3.15);
+        opacity: 0;
+        display: none;
+    }
+  }
+
+  @keyframes rhombus {
+    0%{
+        transform: rotate(0)
+    }
+    50%{
+      transform: rotate(45deg);
+      opacity: 1;
+  }
+  70%{
+    transform: rotate(60deg);
+    opacity: 1;
+  }
+    100%{
+        transform: rotate(90deg);
+        opacity: 0;
+        
+    }
+  }
+  
+  @keyframes animation01_circle{
+    0%{
+        transform: scale3d(0,0,1);
+        opacity: 1;
+    }
+    40%{
+        transform: scale3d(1,1,1);
+        opacity: 1;
+    }
+    60%{
+        transform: scale3d(1,1,1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale3d(0,0,1);
+        opacity: 1;
+    }
+  }
+  
+  .main__image {
+    animation-name: animation_22_1;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-direction: alternate;
+  }
+
+  .main_rasp4, 
+  .main_lemon2 {
+    animation-name: animation_18_1;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-direction: alternate;
+  }
+
+  
+  .main_watermrlon2,
+  .main_rasp3 {
+    animation-name: animation_24_1;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-direction: alternate;
+  }
+
+  .main_lime,
+  .main_rosmarin {
+    animation-name: animation_15_1;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-direction: alternate;
+  }
+
+  .main_straw,
+  .main_straw2,
+  .main_kiwi2,
+  .main_mango,
+  .main_lemon3  {
+    animation-name: animation_15_1;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-direction: alternate;
+  }
+
+  .main_mango,
+  .main_lemon3  {
+    animation-name: animation_9_1;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-direction: alternate;
+  }
+
+  .main_orange2{
+    animation-name: animation_22_1_2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+  }
+
+  @keyframes animation_18_1 {
+    0% {transform: matrix(1,0,0,1,0,0); opacity: 1; animation-timing-function: ease-out}
+    100% {transform: matrix(1.3,0,0,1.3,-130,59); opacity: 1; }
+  }
+  @keyframes animation_22_1 {
+    0% {transform: matrix(1,0,0,1,0,0); opacity: 1; animation-timing-function: ease-in-out}
+    100% {transform: matrix(1.4,0,0,1.4,-49,27); opacity: 1; }
+  }
+  @keyframes animation_22_1_1 {
+    0% {transform: matrix(1,0,0,1,0,0); opacity: 1; animation-timing-function: ease-in-out}
+    100% {transform: matrix(1.4,0,0,1.4,-49,27); opacity: 1; }
+  }
+  @keyframes animation_22_1_2 {
+    0% {transform: matrix(1,0,0,1,0,0); opacity: 1; animation-timing-function: ease-in-out}
+    100% {transform: matrix(1.2,0,0,1.2,-100,100); opacity: 1; }
+  }
+  @keyframes animation_24_1 {
+    0% {transform: translate(0px, 0px) rotate(0deg) scale(1); opacity: 1; animation-timing-function: ease-in}
+    100% {transform: translate(98px, -63px) rotate(-20deg) scale(0.7); opacity: 1; }
+  }
+  @keyframes animation_25_1 {
+    0% {transform: translate(0px, 0px) rotate(0deg) scale(1); opacity: 1; animation-timing-function: ease-in}
+    100% {transform: translate(-43px, 32px) rotate(-20deg) scale(1.03); opacity: 1; }
+  }
+  @keyframes animation_15_1 {
+    0% {transform: matrix(1,0,0,1,0,0); opacity: 1; animation-timing-function: ease-in}
+    100% {transform: matrix(1,0,0,1,72,37); opacity: 1; }
+  }
+  @keyframes animation_9_1 {
+    0% {transform: matrix(1,0,0,1,0,0); opacity: 1; animation-timing-function: ease-in-out}
+    100% {transform: matrix(1.2,0,0,1.2,-40,20); opacity: 1; }
+  }
+  .main_mango2,
+  .main_kiwi,
+  .main_rasp2{
+    animation-name: floating;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-direction: alternate;
+  }
+
+
+  .un_lemon3,
+  .un_rosmarin,
+  .un_straw2 {
+    animation-name: animation_15_1;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-direction: alternate;
+  }
+
+  .un_orange,
+  .un_lemon2,
+  .un_straw3,
+  .un_lime {
+    animation-name: animation_9_1;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-direction: alternate;
+  }
+
+  .un_lemon,
+  .un_watermelon,
+  .un_raspb2,
+  .un_straw {
+    animation-name: animation_22_1_1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+  }
+  .about_rasp2 {
+    animation: animation_15_1 25s linear infinite alternate;
+  }
+ .about_rasp {
+    animation: animation_15_1 10s linear infinite alternate;
+  }
+  .about_straw {
+    animation: animation_15_1 15s linear infinite alternate;
+  }
+ 
+
+  .about__wrap__item img {
+    animation: floating 15s linear infinite alternate;
+  }
+
+ 
